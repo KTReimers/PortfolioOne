@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./static/style.css">
-    <link rel="stylesheet" href="./static/mediaQueries.css">
-    <script src="./static/script.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -35,32 +35,28 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section-pic-container">
-            <img src="./assets/Kyle_headshot.jpg" alt="Kyle's Profile picture" id="profile-pic">
-        </div>
-        <div class="section_text">
+        <img src="./assets/Kyle_headshot.jpg" alt="Kyle's profile pic" id="profile-pic">
+        <div class="profile-text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Kyle Reimers</h1>
             <p class="section_text_p2">Software Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Kyle_Reimers_Resume.pdf')">Download Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linked in profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kyle-reimers/'">
-                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/KTReimers'">
-            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Kyle_Reimers_Resume.pdf')">Download Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My linked in profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kyle-reimers/'">
+            <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/KTReimers'">
         </div>
     </section>
     <section id="about">
         <p class="section_text_p1 section_text">Get to know more</p>
         <h2 class="title">About Me</h2>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/fam.jpg" alt="About me picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-container">
+        <div class="about-container">
+            <img src="./assets/fam.jpg" alt="family pic" class="about-pic">
+            <div class="about-content">
+                <div class="experience-boxes">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="experience icon" class="icon">
                         <h3>Experience</h3>
@@ -74,160 +70,159 @@
                 </div>
                 <div class="text-container">
                     <h3>I'm Kyle, a dedicated software engineer working remotely for Coding Dojo Inc.</h3>
-                    <p>
-                        I have spent the past few years working, designing, and building full stack web applications in Python, Java and JavaScript. I have had the pleasure of being able to open the eyes of new developers to the technologies used in the industry and the endless possibilities that can be done with code. From being able to bring a wireframe to life to building out the backend of an application, there's always something to be learned. That's just it, the thing I love most about being a software engineer is that I am always learning.</p>
+                    <p>I have spent the past few years working, designing, and building full stack web applications in Python, Java and JavaScript. I have had the pleasure of being able to open the eyes of new developers to the technologies used in the industry and the endless possibilities that can be done with code. From being able to bring a wireframe to life to building out the backend of an application, there's always something to be learned. That's just it, the thing I love most about being a software engineer is that I am always learning.</p>
                         <h3>Where I came from</h3>
                         <p>I am a veteran, I served in the Coast Guard as a maintenance technician on the Lockheed Martin C-130J model aircraft. I am a troubleshooter at heart and it shows. I made the switch to the tech industry after I separated from the Coast Guard and got married. I am a family man and want a career that is both challenging and rewarding, but also has a good work-life-balance.</p>
                         <br>
                         <p>Outside of work I am a husband and a father. I enjoy time with my family, the outdoors and working on my truck that is currently in the restoration process. </p>
                 </div>
             </div>
+            <img src="./assets/arrow.png" alt="arrow Icon" onclick="location.href='./#experience'" class="icon arrow">
         </div>
-        <img src="./assets/arrow.png" alt="arrow Icon" onclick="location.href='./#experience'" class="icon arrow">
     </section>
     <section id="experience">
         <p class="section_text_p1">Explore My</p>
         <h2 class="title">Experience</h2>
-        <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JSON</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Tailwind</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Bootstrap</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>jQuery</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Java Server Pages</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>React</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Rest API</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MongoDb</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Spring</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Flask</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Django</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+        <div class="experience-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>JSON</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Tailwind</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Bootstrap</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>jQuery</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Java Server Pages</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>React</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
                 </div>
             </div>
             <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Rest API</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>MongoDb</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Spring</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Flask</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Django</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="flex-other-skills">
+            <div class="other-skills-container">
                 <h2 class="experience-sub-title">Other Skills</h2>
                 <div class="article-container">
                     <article>
@@ -316,27 +311,25 @@
                     </article>
                 </div>
             </div>
+            <img src="./assets/arrow.png" alt="arrow Icon" onclick="location.href='./#projects'" class="icon arrow right">
         </div>
-        <img src="./assets/arrow.png" alt="arrow Icon" onclick="location.href='./#projects'" class="icon arrow">
+    </div>
     </section>
     <section id="projects">
         <p class="section_text_p1">Browse My Recent</p>
         <h2 class="title">Projects</h2>
-        <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container color-container"> <!--duplicate this div for adding future projects-->
-                    <div class="article-container">
-                        <img src="./assets/IMDBClone.png" alt="project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">IMDB Clone</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KTReimers/imdbclone'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://imdb-clone-kyle.vercel.app/'">Live Demo</button>
-                    </div>
+        <div class="project-container">
+            <div class="details-container color-container"> <!--duplicate this div for adding future projects-->
+                <div class="article-container">
+                    <img src="./assets/IMDBClone.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">IMDB Clone</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KTReimers/imdbclone'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://imdb-clone-kyle.vercel.app/'">Live Demo</button>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow Icon" onclick="location.href='./#contact'" class="icon arrow">
     </section>
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
